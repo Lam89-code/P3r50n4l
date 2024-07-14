@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhamad Nur Salam's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <h3>MUHAMAD NUR SALAM</h3>
+            <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+        </nav>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <img src="image/Muhamad Nur Salam.jpg" alt="Muhamad Nur Salam">
+            <h2>Hi. I'm Muhamad Nur Salam</h2>
+            <p>Welcome to my personal website! I am pleased to welcome you here. Let's explore the various information and projects I have worked on. I hope you enjoy your time here and find what you are looking for.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/muhamadnursalam/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/aaallaaamm"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/T4urus5"><i class="fab fa-github"></i></a>
+                <a href="mailto:aaallaaamm03@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1pms1sCyQKaPQ4rIouyThxNe6xq0WZSNX/view?usp=drive_link" download="nama_file_yang_ingin_ditampilkan.pdf">
+            <button id="download-cv">Download CV</button>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Halo! I am Muhamad Nur Salam, a graduate of SMK Negeri 1 Cidaun, majoring in Computer and Network Engineering. I am very interested in continuing my education in the field of Cyber Security or Information Technology at a leading university. I have an interest in cyber security. I believe that technology can have a huge positive impact, and I enjoy being involved in the IT community to continue learning and growing.</p>
+            <h3>Visi</h3>
+            <p>Become a successful and influential professional in the field of cybersecurity and programming, creating innovative and secure solutions for future technology challenges, and contributing to global digital security.</p>
+            <h3>Misi</h3>
+            <ul>
+                <li>Mastering the Main Programming Languages</li>
+                <li>Deepen Cybersecurity Knowledge</li>
+                <li>Take Professional Certification</li>
+                <li>Working on Practical Projects</li>
+                <li>Join the Community</li>
+                <li>Improve Soft Skills</li>
+            </ul>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Specialized Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" data-skill="Computer technician">
+                    <img src="image/Teknisi Komputer.png" alt="Computer technician">
+                    <p>Computer technician</p>
+                </div>
+                <div class="skill-item" data-skill="Graphic design">
+                    <img src="image/Desain Grafis.png" alt="Graphic design">
+                    <p>Graphic design</p>
+                </div>
+                <div class="skill-item" data-skill="HTML">
+                    <img src="image/Logo HTML.png" alt="HTML">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item" data-skill="NMAP">
+                    <img src="image/nmap-logo-256x256.png" alt="NMAP">
+                    <p>NMAP</p>
+                </div>
+                <div class="skill-item" data-skill="Office equipment">
+                    <img src="image/Microsoft.png" alt="Office equipment">
+                    <p>Office equipment</p>
+                </div>
+                <div class="skill-item" data-skill="Martial art">
+                    <img src="image/Silat.png" alt="Martial art">
+                    <p>Martial art</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>I worked at the Bandung Electronic Center as a computer and marketing technician for 4 months. During my work, I was responsible for repairing computers, disassembling components, installing software, and selling computers.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects 🚀</h2>
+            <div class="projects-container">
+                <div class="project-item">
+                    <img src="image/1.jpg" alt="Project 1">
+                    <p>Cerpen Pejuang Siber</p>
+                </div>
+                <div class="project-item">
+                    <img src="path/to/your/project1.jpg" alt="Project 2">
+                    <p>Pejuang Siber</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="animate__animated animate__fadeIn">Contact Me</h2>
+            <form id="contact-form" class="animate__animated animate__fadeIn animate__delay-1s">
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="success-container">
+                <p id="success-message" class="animate__animated animate__fadeIn animate__delay-2s">Pesan Anda telah berhasil dikirim!</p>
+            </div>
+            <p class="animate__animated animate__fadeIn animate__delay-2s">Thank you for visiting!</p>
+            <div class="social-icons animate__animated animate__fadeIn animate__delay-2s">
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/muhamadnursalam/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/aaallaaamm"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/T4urus5"><i class="fab fa-github"></i></a>
+                <a href="mailto:aaallaaamm03@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Alam. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
